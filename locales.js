@@ -28,7 +28,7 @@ window.I18N = {
       "hero.phrase": "Hago que las máquinas entiendan cómo hablamos de verdad, y que los procesos que hay detrás funcionen solos.",
       "hero.badge1": "Alexa es-ES / es-MX / es-US",
       "hero.badge2": "IA conversacional · Datos · Operaciones",
-      "hero.badge3": "ES · IT · EN · AR",
+      "hero.badge3": "ES · IT · EN",
       "hero.stat1": "precisión del modelo",
       "hero.stat2": "ahorradas con automatización",
       "hero.stat2unit": " h/semana",
@@ -41,7 +41,7 @@ window.I18N = {
       "about.kicker": "Sobre mí",
       "about.title": "Lingüística, datos y operaciones en el mismo perfil",
       "about.p1": "Vengo de la lingüística y llevo más de cinco años trabajando con IA conversacional. En Amazon Alexa, en Turín, fui Machine Learning Data Linguist y mejoré cómo el asistente entiende el español de España, México y Estados Unidos. Después pasé a Amazon Prime Video en Madrid como Digital Content Process Expert, donde automaticé procesos y lideré la gobernanza de datos de mi organización.",
-      "about.p2": "Antes de la IA, dirigí equipos de atención al cliente y moderación de contenido en Madrid y Dublín. De esa etapa me quedan la obsesión por los KPIs, el coaching 1:1 y la convicción de que un buen proceso se nota en las personas que lo usan. Hablo español, italiano, inglés y árabe.",
+      "about.p2": "Antes de la IA, dirigí equipos de atención al cliente y moderación de contenido en Madrid y Dublín. De esa etapa me quedan la obsesión por los KPIs, el coaching 1:1 y la convicción de que un buen proceso se nota en las personas que lo usan. Hablo español, italiano e inglés.",
       "about.h1t": "IA conversacional",
       "about.h1d": "Grammar induction, diseño de prompts y calidad de datos para asistentes de voz.",
       "about.h2t": "Datos y automatización",
@@ -96,7 +96,7 @@ window.I18N = {
       "recog.r2d": "Convergence fue un proyecto de estandarización de procesos, guidelines y SOPs, y de unificación y knowledge share entre locales. Fui el punto de contacto para los locales en español.",
 
       "timeline.kicker": "Trayectoria",
-      "timeline.title": "De la atención al cliente a la IA",
+      "timeline.title": "De la atención al cliente a las operaciones de IA y contenido digital",
       "timeline.edu": "Formación",
 
       "skills.kicker": "Habilidades",
@@ -342,7 +342,7 @@ window.I18N = {
       "hero.phrase": "I help machines understand how people really speak, and make the processes behind them run on their own.",
       "hero.badge1": "Alexa es-ES / es-MX / es-US",
       "hero.badge2": "Conversational AI · Data · Operations",
-      "hero.badge3": "ES · IT · EN · AR",
+      "hero.badge3": "ES · IT · EN",
       "hero.stat1": "model accuracy",
       "hero.stat2": "saved through automation",
       "hero.stat2unit": " h/week",
@@ -355,7 +355,7 @@ window.I18N = {
       "about.kicker": "About",
       "about.title": "Linguistics, data and operations in one profile",
       "about.p1": "My background is in linguistics, and I've spent more than five years working with conversational AI. At Amazon Alexa in Turin I was a Machine Learning Data Linguist, improving how the assistant understands Spanish from Spain, Mexico and the United States. I then moved to Amazon Prime Video in Madrid as a Digital Content Process Expert, where I automated processes and led data governance for my organization.",
-      "about.p2": "Before AI, I led customer service and content moderation teams in Madrid and Dublin. That's where my obsession with KPIs and 1:1 coaching comes from, along with the belief that a good process shows in the people who use it. I speak Spanish, Italian, English and Arabic.",
+      "about.p2": "Before AI, I led customer service and content moderation teams in Madrid and Dublin. That's where my obsession with KPIs and 1:1 coaching comes from, along with the belief that a good process shows in the people who use it. I speak Spanish, Italian and English.",
       "about.h1t": "Conversational AI",
       "about.h1d": "Grammar induction, prompt design and data quality for voice assistants.",
       "about.h2t": "Data and automation",
@@ -410,7 +410,7 @@ window.I18N = {
       "recog.r2d": "Convergence was a project to standardize processes, guidelines and SOPs, and to unify and share knowledge across locales. I was the point of contact for the Spanish locales.",
 
       "timeline.kicker": "Career",
-      "timeline.title": "From customer service to AI",
+      "timeline.title": "From customer service to AI and digital content operations",
       "timeline.edu": "Education",
 
       "skills.kicker": "Skills",
