@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>José Martín · IA conversacional y operaciones de contenido</title>
+  <meta name="description" content="Portfolio de José Martín: especialista en IA conversacional y operaciones de contenido. Alexa en español (es-ES, es-MX, es-US), datos, automatización y operaciones de contenido digital.">
+  <meta name="author" content="José Martín">
+  <meta name="theme-color" content="#0E0E10">
+  <link rel="canonical" href="https://jose-martin-33.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="José Martín · IA conversacional y operaciones de contenido">
+  <meta property="og:description" content="Alexa en español, datos, automatización y operaciones de contenido digital.">
+  <meta property="og:url" content="https://jose-martin-33.github.io/">
+  <meta property="og:image" content="https://jose-martin-33.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_GB">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="José Martín · IA conversacional y operaciones de contenido">
+  <meta name="twitter:description" content="Alexa en español, datos, automatización y operaciones de contenido digital.">
+  <meta name="twitter:image" content="https://jose-martin-33.github.io/assets/og-image.png">
+
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "José Martín",
+    "alternateName": "José Luis Martín Flores",
+    "jobTitle": "Especialista en IA conversacional y operaciones de contenido",
+    "url": "https://jose-martin-33.github.io/",
+    "image": "https://jose-martin-33.github.io/assets/foto.webp",
+    "sameAs": ["https://www.linkedin.com/in/josemartin3"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Complutense de Madrid" },
+    "knowsLanguage": ["es", "it", "en", "ar"],
+    "knowsAbout": ["IA conversacional", "Lingüística", "Diseño de prompts", "Gobernanza de datos", "Automatización", "Operaciones de contenido digital"]
+  }
+  </script>
+
+  <!-- Aplica el tema guardado antes de pintar, para evitar parpadeos -->
+  <script>
+    try { var t = localStorage.getItem('jm-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#inicio" aria-label="José Martín, inicio">JM<span>.</span></a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Principal">
+        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#alexa" data-i18n="nav.alexa">Alexa</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#mapa" data-i18n="nav.map">Mapa</a>
+        <a href="#trayectoria" data-i18n="nav.timeline">Trayectoria</a>
+        <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang" role="group" data-i18n-attr="aria-label:nav.lang" aria-label="Cambiar idioma">
+          <button type="button" class="lang__btn" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="icon-btn" id="theme-toggle" data-i18n-attr="aria-label:nav.theme" aria-label="Cambiar entre modo claro y oscuro">
+          <i class="fa-solid fa-sun theme-icon--light" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon theme-icon--dark" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="icon-btn nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:nav.menu" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="kicker"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span data-i18n="hero.kicker">Madrid, España</span></p>
+          <h1 class="hero__name">José Martín</h1>
+          <p class="hero__headline" data-i18n="hero.headline">Especialista en IA conversacional y operaciones de contenido</p>
+          <p class="hero__sub" data-i18n="hero.sub">Datos, automatización y customer success</p>
+          <p class="hero__phrase" data-i18n="hero.phrase">Hago que las máquinas entiendan cómo hablamos de verdad, y que los procesos que hay detrás funcionen solos.</p>
+
+          <ul class="badges" aria-label="Badges">
+            <li class="badge"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> <span data-i18n="hero.badge1">Alexa es-ES / es-MX / es-US</span></li>
+            <li class="badge"><i class="fa-solid fa-brain" aria-hidden="true"></i> <span data-i18n="hero.badge2">IA conversacional · Datos · Operaciones</span></li>
+            <li class="badge"><i class="fa-solid fa-language" aria-hidden="true"></i> <span data-i18n="hero.badge3">ES · IT · EN · AR</span></li>
+          </ul>
+
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="assets/cv.pdf" download><i class="fa-solid fa-download" aria-hidden="true"></i> <span data-i18n="hero.cv">Descargar CV</span></a>
+            <a class="btn btn--ghost" href="#contacto"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i> <span data-i18n="hero.contact">Contacto</span></a>
+          </div>
+        </div>
+
+        <div class="hero__photo reveal">
+          <div class="photo-frame">
+            <img src="assets/foto.webp" width="480" height="600" data-i18n-attr="alt:hero.photoAlt" alt="Fotografía de José Martín" id="hero-photo">
+            <div class="photo-fallback" aria-hidden="true">JM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <dl class="stats reveal">
+          <div class="stat">
+            <dt class="stat__num mono"><span>80% → </span><span class="count" data-from="80" data-to="98">98</span><span>%</span></dt>
+            <dd class="stat__label" data-i18n="hero.stat1">precisión del modelo</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__num mono"><span class="count" data-from="0" data-to="20">20</span><span data-i18n="hero.stat2unit"> h/semana</span></dt>
+            <dd class="stat__label" data-i18n="hero.stat2">ahorradas con automatización</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__num mono"><span class="count" data-from="0" data-to="5">5</span><span data-i18n="hero.stat3unit">+ años</span></dt>
+            <dd class="stat__label" data-i18n="hero.stat3">en Amazon Alexa</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section" id="sobre-mi">
+      <div class="container about">
+        <div class="section__head reveal">
+          <p class="kicker" data-i18n="about.kicker">Sobre mí</p>
+          <h2 data-i18n="about.title">Lingüística, datos y operaciones en el mismo perfil</h2>
+        </div>
+        <div class="about__text reveal">
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+        </div>
+        <ul class="highlights">
+          <li class="card highlight reveal">
+            <i class="fa-solid fa-comments highlight__icon" aria-hidden="true"></i>
+            <h3 data-i18n="about.h1t">IA conversacional</h3>
+            <p data-i18n="about.h1d"></p>
+          </li>
+          <li class="card highlight reveal">
+            <i class="fa-solid fa-gears highlight__icon" aria-hidden="true"></i>
+            <h3 data-i18n="about.h2t">Datos y automatización</h3>
+            <p data-i18n="about.h2d"></p>
+          </li>
+          <li class="card highlight reveal">
+            <i class="fa-solid fa-layer-group highlight__icon" aria-hidden="true"></i>
+            <h3 data-i18n="about.h3t">Operaciones de contenido</h3>
+            <p data-i18n="about.h3d"></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ALEXA SHOWCASE ============ -->
+    <section class="section section--alt" id="alexa">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker" data-i18n="alexa.kicker">Showcase</p>
+          <h2 data-i18n="alexa.title">Alexa en español</h2>
+          <p class="section__intro" data-i18n="alexa.intro"></p>
+        </div>
+
+        <div class="showcase reveal">
+          <div class="showcase__picker">
+            <h3 class="label mono" data-i18n="alexa.localesTitle">Locales</h3>
+            <div class="locales" id="alexa-locales"></div>
+
+            <h3 class="label mono" data-i18n="alexa.domainsTitle">Dominios con nuevas funcionalidades</h3>
+            <div class="chips" id="alexa-domains"></div>
+          </div>
+
+          <div class="card showcase__panel" id="alexa-panel" aria-live="polite" tabindex="-1"></div>
+        </div>
+
+        <dl class="stats stats--compact reveal">
+          <div class="stat">
+            <dt class="stat__num mono"><span class="count" data-from="0" data-to="3">3</span></dt>
+            <dd class="stat__label" data-i18n="alexa.statLocales">locales</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__num mono"><span class="count" data-from="0" data-to="4">4</span><span>+</span></dt>
+            <dd class="stat__label" data-i18n="alexa.statDomains">dominios</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__num mono"><span>80% → </span><span class="count" data-from="80" data-to="98">98</span><span>%</span></dt>
+            <dd class="stat__label" data-i18n="alexa.statAcc">precisión del modelo</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker" data-i18n="projects.kicker">Trabajo</p>
+          <h2 data-i18n="projects.title">Proyectos</h2>
+          <p class="section__intro" data-i18n="projects.intro"></p>
+        </div>
+        <div class="filters reveal" role="group" id="project-filters" data-i18n-attr="aria-label:projects.filterLabel" aria-label="Filtrar proyectos"></div>
+        <div class="projects" id="projects-grid"></div>
+        <p class="projects__empty" id="projects-empty" hidden data-i18n="projects.empty"></p>
+      </div>
+    </section>
+
+    <!-- ============ MAPA ============ -->
+    <section class="section section--alt" id="mapa">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker" data-i18n="map.kicker">Conexiones</p>
+          <h2 data-i18n="map.title">Mapa de proyectos</h2>
+          <p class="section__intro" data-i18n="map.intro"></p>
+        </div>
+
+        <div class="map reveal">
+          <div class="map__canvas card">
+            <div class="map__legend mono" aria-hidden="true">
+              <span><i class="dot dot--tool"></i><span data-i18n="map.tools">Herramientas</span></span>
+              <span><i class="dot dot--project"></i><span data-i18n="map.projects">Proyectos</span></span>
+              <span><i class="dot dot--result"></i><span data-i18n="map.results">Resultados</span></span>
+            </div>
+            <svg id="map-svg" viewBox="0 0 1000 560" role="group" aria-labelledby="map-svg-title">
+              <title id="map-svg-title">Mapa de proyectos</title>
+              <g id="map-edges"></g>
+              <g id="map-nodes"></g>
+            </svg>
+          </div>
+          <aside class="map__panel card" id="map-panel" aria-live="polite"></aside>
+        </div>
+
+        <!-- Versión en lista para móvil -->
+        <div class="map-list" id="map-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ RECONOCIMIENTOS ============ -->
+    <section class="section" id="reconocimientos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker" data-i18n="recog.kicker">Reconocimientos</p>
+          <h2 data-i18n="recog.title">Roles de referencia</h2>
+        </div>
+        <div class="recog">
+          <article class="card recog__item reveal">
+            <i class="fa-solid fa-shield-halved recog__icon" aria-hidden="true"></i>
+            <div>
+              <p class="recog__org mono" data-i18n="recog.r1o">Amazon Prime Video</p>
+              <h3 data-i18n="recog.r1t">Referente de gobernanza de datos</h3>
+              <p data-i18n="recog.r1d"></p>
+            </div>
+          </article>
+          <article class="card recog__item reveal">
+            <i class="fa-solid fa-arrows-to-circle recog__icon" aria-hidden="true"></i>
+            <div>
+              <p class="recog__org mono" data-i18n="recog.r2o">Amazon Alexa</p>
+              <h3 data-i18n="recog.r2t">POC es-XX en Convergence</h3>
+              <p data-i18n="recog.r2d"></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAYECTORIA ============ -->
+    <section class="section section--alt" id="trayectoria">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker" data-i18n="timeline.kicker">Trayectoria</p>
+          <h2 data-i18n="timeline.title">De la atención al cliente a la IA</h2>
+        </div>
+        <ol class="timeline" id="timeline"></ol>
+        <h3 class="label mono edu-title reveal" data-i18n="timeline.edu">Formación</h3>
+        <div class="edu" id="education"></div>
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker" data-i18n="skills.kicker">Habilidades</p>
+          <h2 data-i18n="skills.title">Habilidades e idiomas</h2>
+        </div>
+        <div class="skills" id="skills"></div>
+        <div class="card langs reveal">
+          <h3 class="label mono" data-i18n="skills.langs">Idiomas</h3>
+          <ul class="langs__list" id="languages"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section section--alt" id="contacto">
+      <div class="container contact reveal">
+        <p class="kicker" data-i18n="contact.kicker">Contacto</p>
+        <h2 data-i18n="contact.title">¿Hablamos?</h2>
+        <p class="section__intro" data-i18n="contact.text"></p>
+        <div class="contact__ctas">
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/josemartin3" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> <span data-i18n="contact.linkedin">LinkedIn</span></a>
+          <button type="button" class="btn btn--ghost" data-open-modal="modal-contact"><i class="fa-regular fa-envelope" aria-hidden="true"></i> <span data-i18n="contact.form">Escribirme</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> <span data-i18n="footer.rights">José Martín. Todos los derechos reservados.</span></p>
+      <div class="footer__links">
+        <button type="button" class="link-btn" data-open-modal="modal-privacy" data-i18n="footer.privacy">Política de privacidad</button>
+        <a href="#inicio" data-i18n="footer.top">Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MODALES ============ -->
+  <!-- Proyecto -->
+  <div class="modal" id="modal-project" role="dialog" aria-modal="true" aria-labelledby="mp-title" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box modal__box--wide" role="document">
+      <button type="button" class="icon-btn modal__close" data-close-modal data-i18n-attr="aria-label:modal.close" aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <div id="mp-content"></div>
+    </div>
+  </div>
+
+  <!-- Formulario de contacto -->
+  <div class="modal" id="modal-contact" role="dialog" aria-modal="true" aria-labelledby="mc-title" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box" role="document">
+      <button type="button" class="icon-btn modal__close" data-close-modal data-i18n-attr="aria-label:modal.close" aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <h2 id="mc-title" data-i18n="form.title">Escríbeme</h2>
+      <form class="form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="f-name" data-i18n="form.name">Nombre</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required data-i18n-attr="placeholder:form.namePh" aria-describedby="f-name-err">
+          <p class="field__err" id="f-name-err"></p>
+        </div>
+        <div class="field">
+          <label for="f-email" data-i18n="form.email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required data-i18n-attr="placeholder:form.emailPh" aria-describedby="f-email-err">
+          <p class="field__err" id="f-email-err"></p>
+        </div>
+        <div class="field">
+          <label for="f-message" data-i18n="form.message">Mensaje</label>
+          <textarea id="f-message" name="message" rows="5" required data-i18n-attr="placeholder:form.messagePh" aria-describedby="f-message-err"></textarea>
+          <p class="field__err" id="f-message-err"></p>
+        </div>
+        <!-- Campo trampa contra spam (Formspree lo ignora si está vacío) -->
+        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field field--check">
+          <input id="f-privacy" name="privacy" type="checkbox" required aria-describedby="f-privacy-err">
+          <label for="f-privacy"><span data-i18n="form.privacy">He leído y acepto la</span> <button type="button" class="link-btn" data-open-modal="modal-privacy" data-i18n="form.privacyLink">política de privacidad</button></label>
+          <p class="field__err" id="f-privacy-err"></p>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block" id="f-submit"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i> <span data-i18n="form.send">Enviar mensaje</span></button>
+        <p class="form__status" id="f-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Política de privacidad -->
+  <div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="pp-title" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box" role="document">
+      <button type="button" class="icon-btn modal__close" data-close-modal data-i18n-attr="aria-label:modal.close" aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <h2 id="pp-title" data-i18n="privacy.title">Política de privacidad</h2>
+      <div class="prose" data-i18n="privacy.body"></div>
+    </div>
+  </div>
+
+  <script src="locales.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
