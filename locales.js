@@ -34,7 +34,7 @@ window.I18N = {
       "hero.stat2unit": " h/semana",
       "hero.stat3": "en Amazon Alexa",
       "hero.stat3unit": "+ años",
-      "hero.cv": "Descargar CV",
+      "hero.projects": "Ver proyectos",
       "hero.contact": "Contacto",
       "hero.photoAlt": "Fotografía de José Martín",
 
@@ -348,7 +348,7 @@ window.I18N = {
       "hero.stat2unit": " h/week",
       "hero.stat3": "at Amazon Alexa",
       "hero.stat3unit": "+ years",
-      "hero.cv": "Download CV",
+      "hero.projects": "See projects",
       "hero.contact": "Contact",
       "hero.photoAlt": "Photo of José Martín",
 

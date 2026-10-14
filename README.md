@@ -7,18 +7,15 @@ index.html     estructura, SEO (meta, Open Graph, Twitter Card, JSON-LD)
 styles.css     paleta, modo claro/oscuro, responsive
 script.js      idioma, filtros, modales, mapa, contadores, formulario
 locales.js     TODOS los textos en español e inglés
-assets/        favicon.svg, og-image.png  (+ foto.webp y cv.pdf, que añades tú)
+assets/        favicon.svg, og-image.png, foto.webp
 .nojekyll      evita que GitHub procese el sitio con Jekyll
 ```
 
 ## Antes de publicar
 
-1. **Foto**: guárdala como `assets/foto.webp` (vertical 4:5, unos 1200 px de alto).
-   Si no está, se muestra "JM" en su lugar.
-2. **CV**: guárdalo como `assets/cv.pdf`.
-3. **Marcadores [AÑADIR: ...]**: abre `locales.js`, busca `AÑADIR` (y `ADD` en la parte
-   en inglés) y sustitúyelos por el dato real o bórralos. En la web se ven resaltados
-   en naranja para que no se te escape ninguno.
+- **Foto**: ya está en `assets/foto.webp`. Si la cambias, usa formato vertical 4:5.
+- **Marcadores**: si en el futuro añades algo como `[AÑADIR: ...]` en `locales.js`, se
+  verá resaltado en naranja en la web hasta que lo sustituyas.
 
 ## 1. Crear el repositorio
 

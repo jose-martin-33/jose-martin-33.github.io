@@ -6,7 +6,7 @@
 
   /* ---------- Configuración ---------- */
   // Sustituye TU_ID por el ID de tu formulario de Formspree (p. ej. "xyzabcd").
-  var FORMSPREE_ENDPOINT = "https://formspree.io/f/TU_ID";
+  var FORMSPREE_ENDPOINT = "https://formspree.io/f/xqpeyole";
 
   var I18N = window.I18N;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -550,7 +550,7 @@
       Object.keys(fields).forEach(function (k) { if (!check(k) && !firstBad) firstBad = fields[k].el; });
       if (firstBad) { firstBad.focus(); return; }
 
-      if (FORMSPREE_ENDPOINT.indexOf("TU_ID") !== -1) {
+      if (!/formspree\.io\/f\/[a-z0-9]+$/i.test(FORMSPREE_ENDPOINT) || FORMSPREE_ENDPOINT.indexOf("TU_ID") !== -1) {
         status.textContent = t("form.notConfigured"); status.classList.add("is-error"); return;
       }
 
